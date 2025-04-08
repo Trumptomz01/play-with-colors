@@ -15,6 +15,7 @@ body::before{
    backdrop-filter: blur(10px);
    z-index: -1;
 
+
 }
 header{
    display: flex;
@@ -38,7 +39,7 @@ footer {
 }
 .color-input {
    position: absolute;
-   background-color: #ffffffd3;
+   background-color: #ffffff9c;
    transform: translate(-50%, -50%);
    top: 50%;
    left: 50%;
