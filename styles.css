@@ -31,7 +31,7 @@ footer {
    width: 100%;
    text-align: center;
    color: #fff;
-   font-size: 0.7em;
+   font-size: 0.75em;
    font-family: 'Courier New', Courier, monospace;
    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
@@ -60,10 +60,6 @@ footer {
    text-decoration-color: rgba(3, 3, 3, 0.4);
    font-size: 20px;
    font-family: 'Courier New', Courier, monospace;
-}
-.anim{
-   animation: slideIn 2s ease-out;
-   display: inline-block;
 }
 .whatsapp{
    position: absolute;
@@ -96,6 +92,9 @@ footer {
 .whatsapp-btn a{
    color: #000;
    text-decoration: none;
+}
+footer a{
+   color: #fff;
 }
 @keyframes slideIn {
    from {
