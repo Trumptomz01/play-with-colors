@@ -9,6 +9,12 @@ const colors = {
    orange: "orange",
    pink: "pink",
    brown: "brown",
+   cinnamon: "#D27D46",
+   copper: "#B87333",       
+   rust: "#8B3103",      
+   terracotta: "#E2725B",   
+   cork: "#D1A57F",       
+   khaki: "#C3B091", 
    gray: "gray",
    black: "black",
    white: "#fff",
@@ -235,9 +241,8 @@ const colors = {
   stone: "#928E85",
   bronze: "#CD7F32",
   steel: "#4682B4",
-  iron: "#322C2B"
-
-
+  iron: "#322C2B",
+  pitch:"#0A0A0A"
 };
 input.addEventListener("input", () => {
    const value = input.value.toLowerCase();
