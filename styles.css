@@ -1,3 +1,6 @@
+*{
+   /* margin: 0; */
+}
 body{
    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdyYXkgbmF0dXJlfGVufDB8fHx8MTY5MjA3NTQ1Ng&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center fixed;
    background-size: cover;
@@ -67,6 +70,39 @@ footer {
    animation: slideIn 2s ease-out;
    display: inline-block;
 }
+.whatsapp{
+   position: absolute;
+   color: #fff;
+   font-family: sans-serif;
+   right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   bottom: 20px; 
+}
+.whatsapp-btn{
+   background-color: #25D366;
+   margin: 0;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 50px;
+   font-size:20px;
+   cursor: pointer;
+   text-decoration: none;
+   font-family:;
+   display: flex;
+   align-items: center;
+}
+.whatsapp-btn:hover{
+   background-color: #128c55;
+   transition: background-color 0.3s ease;
+}
+.whatsapp-btn a{
+   color: #000;
+   text-decoration: none;
+}
 @keyframes slideIn {
    from {
      transform: translateX(-100%);
@@ -82,5 +118,12 @@ footer {
       width: 90%;
       font-size: 16px;
    }
-   
+   .whatsapp{
+      position: absolute;
+      color: #fff;
+      font-size:14px ;
+      font-family: 'Courier New', Courier, monospace;
+      right: 20px;
+      bottom: 40px; 
+   }
 }

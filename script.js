@@ -181,7 +181,9 @@ const colors = {
    lightpapayawhip: "#ffefd5",
    lightseashell: "#fff5ee",
    lightthistle: "#e6d8e6",
-   lightwheat: "#f5deb3"
+   lightwheat: "#f5deb3",
+   ash:"#B2BEB5",
+   darkash: "#6E7F80",
 
 };
 input.addEventListener("input", () => {
