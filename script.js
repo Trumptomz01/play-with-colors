@@ -243,7 +243,24 @@ const colors = {
    steel: "#4682B4",
    iron: "#322C2B",
    pitch:"#0A0A0A",
-   darkpeach:"#DE7E5D"
+   darkpeach:"#DE7E5D",
+   turquoise: "#40E0D0",
+   lavender: "#E6E6FA",
+   ivory: "#FFFFF0",
+   aqua : "#00FFFF",
+   onions:"#A64B2A",
+   redonions:"#894452",
+   wine:"#722F37",
+   grape:"#6F2C91",
+   blueberry:"#4F86F7",
+   raspberry:"#D5006D",
+   strawberry:"#FA5053",
+   watermelon:"#FC6C85",
+   cantaloupe:"#FFA07A",
+   honeydew:"#F0FFF0",
+   kiwi:"#8EE53F",
+   papaya:"##FF7628",
+   coconut:"#965A3E",
 };
 input.addEventListener("input", () => {
    const value = input.value.toLowerCase();
