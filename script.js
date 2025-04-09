@@ -248,7 +248,7 @@ const colors = {
    lavender: "#E6E6FA",
    ivory: "#FFFFF0",
    aqua : "#00FFFF",
-   onions:"#A64B2A",
+   onions:"#B96C93",
    redonions:"#894452",
    wine:"#722F37",
    grape:"#6F2C91",
@@ -261,7 +261,7 @@ const colors = {
    kiwi:"#8EE53F",
    papaya:"##FF7628",
    coconut:"#965A3E",
-   onion:"#A64B2A",
+   onion:" #B96C93",
 
 };
 input.addEventListener("input", () => {
