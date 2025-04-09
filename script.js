@@ -261,6 +261,8 @@ const colors = {
    kiwi:"#8EE53F",
    papaya:"##FF7628",
    coconut:"#965A3E",
+   onion:"#A64B2A",
+
 };
 input.addEventListener("input", () => {
    const value = input.value.toLowerCase();
