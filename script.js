@@ -265,6 +265,7 @@ const colors = {
 
 };
 input.addEventListener("input", () => {
-   const value = input.value.toLowerCase();
+   const value = input.value.toLowerCase().trim();
    input.style.backgroundColor = colors[value] || "#ffffff9c";
+   console.log(value)
 });
