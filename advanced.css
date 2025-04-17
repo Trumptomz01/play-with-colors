@@ -40,6 +40,7 @@ input[type="text"]{
    color: #000;
    padding:7px;
    border-radius: 5px;
+   cursor: pointer;
    background: linear-gradient(135deg, #00ff95, #00bfff);
 }
 footer{
