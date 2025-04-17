@@ -26,17 +26,32 @@
       <div class="color-box" id="colorBox"></div>
    </header>
    <section>
-      <div>
-         <input  aria-label="Type a color name to change the background" type="text" class="color-input" placeholder="Type a color" id="colorInput" autocomplete="off" />
+      <div class="input-div">
+         <input  aria-label="Type a color name to change the background" type="text" class="color-input" placeholder="red, blue, green" id="colorInput" autocomplete="off" />
       </div>
    </section>
    <section class="whatsapp">
-      <p>Got issues?</p>
-      <button class="whatsapp-btn"><a target="_blank" href="https://wa.link/k0blr1"><i class="fa-brands fa-whatsapp"></i></a></button>
+      <div class="dev-mode">
+         <button class="switch-btn" onclick="switchPage()"> <a href="advanced.html"><i class="fa-solid fa-laptop-code"></i> Advanced</a> </button>
+      </div>
+      <div class="issues">
+         <p>Got issues?</p>
+         <button class="whatsapp-btn"><a target="_blank" href="https://wa.link/k0blr1"><i class="fa-brands fa-whatsapp"></i></a></button>
+      </div>
    </section>
-   <footer>
-     <p>Created by <a href="https://trumptomz.vercel.app/" target="_blank" rel="noopener noreferrer">Trumptomz</a></p>
-   </footer>
+   <!-- <div id="devPage" class="page">
+      <h1>Developer Mode</h1>
+      <section>
+        <div class="controls">
+          <label for="color-picker">Pick a color:</label>
+          <input type="color" id="color-picker" value="#3498db" />
+          <input type="text" id="color-text" placeholder="Enter color" />
+          <button id="generate-palette">Generate Palette</button>
+        </div>
+      </section>
+   </div> -->
+
+
    <script src="script.js"></script>
 </body>
 </html>

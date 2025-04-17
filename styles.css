@@ -1,19 +1,22 @@
-body{
-   background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdyYXkgbmF0dXJlfGVufDB8fHx8MTY5MjA3NTQ1Ng&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center fixed;
-   background-size: cover;
-   align-items: center;
-}
-body::before{
-   content: '';
-   position: absolute;
-   top: 0;
-   color: DAR;
-   left: 0;
-   width: 100%;
+html, body {
+   margin: 0;
+   padding: 0;
    height: 100%;
-   background-color: rgba(0, 0, 0, 0.5);
-   backdrop-filter: blur(10px);
-   z-index: -1;
+   overflow-x: hidden;
+   background-color: black;
+}
+::-webkit-scrollbar{
+   width: 5px;
+   background-color:transparent;
+}
+::-webkit-scrollbar-thumb{
+   background-color: #757373b5;
+}
+body{
+   background: linear-gradient(135deg, #131313, #323232);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 header{
    display: flex;
@@ -21,39 +24,33 @@ header{
    justify-content: center;
    align-items: center;
    color: #fff;
+   margin: 10px;
    font-family: 'Courier New', Courier, monospace;
    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
-footer {
-   position: fixed;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   text-align: center;
-   color: #fff;
-   font-size: 0.7em;
-   font-family: 'Courier New', Courier, monospace;
-   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+header p{
+   font-size: 0.8em;
+}
+.input-div{
+   display: flex;
+   margin: auto;
+   justify-content: center ;
+   width: 50%;
+   height: 300px;
+   border-radius: 10px;
 }
 .color-input {
-   position: absolute;
    background-color: #ffffff9c;
-   transform: translate(-50%, -50%);
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 400px;
-   height: 300px;
    color: #000;
+   box-sizing: content-box;
    text-align: center;
-   padding: 10px;
-   border-radius: 10px;
    box-shadow:
-   0 0 20px rgba(156, 156, 156, 0.523),
+   0 0 10px rgba(156, 156, 156, 0.523),
    inset 0 0 5px rgba(164, 163, 163, 0.555);
-   border:  1px  rgba(255,255,255,0.4);
-   backdrop-filter: blur(10px);
+   width: 100%;
+   border:  none;
    outline: none;
+   border-radius: 10px;
    transition: background 0.5s ease-in-out, background-color 0.4s ease-in-out;
    text-decoration: underline;
    text-decoration-thickness: 1px;
@@ -62,15 +59,18 @@ footer {
    font-family: 'Courier New', Courier, monospace;
 }
 .whatsapp{
-   position: absolute;
+   margin: 50px 20px;
    color: #fff;
    font-family: sans-serif;
-   right: 20px;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
+}
+.issues{
+   color: #fff;;
+   display: flex;
    flex-direction: column;
-   bottom: 20px; 
+   align-items: center;
 }
 .whatsapp-btn{
    background-color: #25D366;
@@ -84,6 +84,7 @@ footer {
    text-decoration: none;
    display: flex;
    align-items: center;
+   justify-content: center;
 }
 .whatsapp-btn:hover{
    background-color: #128c55;
@@ -93,30 +94,35 @@ footer {
    color: #000;
    text-decoration: none;
 }
+.switch-btn{
+   border: none;
+   padding: 10px;
+   background: linear-gradient(135deg, #00ff95, #00bfff);
+   color: #000;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.dev-mode a{
+   color: #000;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: 'Courier New', Courier, monospace;
+}
+.switch-btn:hover{
+   background: linear-gradient(135deg, #00bfff, #00ff95);
+   transition: 0.3s ease-in-out;
+}
 footer a{
    color: #fff;
 }
-@keyframes slideIn {
-   from {
-     transform: translateX(-100%);
-     opacity: 0;
-   }
-   to {
-     transform: translateX(0);
-     opacity: 1;
-   }
-}
 @media (max-width: 768px) {
-   .color-input {
+   .input-div {
       width: 90%;
       font-size: 16px;
    }
    .whatsapp{
-      position: absolute;
       color: #fff;
       font-size:14px ;
       font-family: 'Courier New', Courier, monospace;
-      right: 20px;
-      bottom: 40px; 
    }
 }
