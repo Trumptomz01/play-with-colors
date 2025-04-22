@@ -19,26 +19,11 @@
    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-   <header>
-      <h1>Color Input</h1>
-      <p>Type a color name in the input field below:</p>
-      <div class="color-box" id="colorBox"></div>
-   </header>
-   <section>
-      <div class="input-div">
-         <input  aria-label="Type a color name to change the background" type="text" class="color-input" placeholder="red, blue, green" id="colorInput" autocomplete="off" />
-      </div>
-   </section>
-   <section class="whatsapp">
-      <div class="dev-mode">
-         <button class="switch-btn" onclick="switchPage()"> <a href="advanced.html"><i class="fa-solid fa-laptop-code"></i> Advanced</a> </button>
-      </div>
-      <div class="issues">
-         <p>Got issues?</p>
-         <button class="whatsapp-btn"><a target="_blank" href="https://wa.link/k0blr1"><i class="fa-brands fa-whatsapp"></i></a></button>
-      </div>
-   </section>
-<script src="script.js"></script>
+<body>   
+   <div id="main-box" class="input-div">
+      <label id="type" for="colorInput">Enter a color name, HEX, RGB, or HSL value</label>
+      <input  aria-label="Type a color name to change the back    ground" type="text" class="color-input" placeholder="#ffffff" id="colorInput" autocomplete="off" autofocus>
+   </div>
+<script src="/main.js"></script>
 </body>
 </html>

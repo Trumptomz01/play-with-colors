@@ -1,66 +1,47 @@
-html, body {
-   margin: 0;
-   padding: 0;
-   height: 100%;
-   overflow-x: hidden;
-   background-color: black;
-}
-::-webkit-scrollbar{
-   width: 5px;
-   background-color:transparent;
-}
-::-webkit-scrollbar-thumb{
-   background-color: #757373b5;
-}
 body{
-   background: linear-gradient(135deg, #131313, #323232);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-header{
+   margin: auto;
+   min-height: 100vh;
+   overflow: auto;
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
-   color: #fff;
-   margin: 10px;
-   font-family: 'Courier New', Courier, monospace;
-   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+   padding: 1rem;
+   box-sizing: border-box;
+   background-color: rgb(24, 30, 43);
 }
-header p{
-   font-size: 0.8em;
+label{
+   color: #fff;
+   font: 14px system-ui, sans-serif;
 }
 .input-div{
    display: flex;
-   margin: auto;
    justify-content: center ;
-   width: 50%;
-   height: 300px;
+   box-shadow: 0 10px 15px -1px rgba(0, 0, 0, 0.2),0 4px 10px -2px rgba(0, 0, 0, 0.2);
+   flex-direction: column;
+   border: none;
+   background-color:  rgb(255, 255, 255, 0.2);
+   transition: all 0.1s ease-in;
+   margin: auto;
+   margin: 0 auto;
+   width: 500px;
+   text-align: center;
+   aspect-ratio: 1/0.7;
    border-radius: 10px;
 }
 .color-input {
-   background-color: #ffffff9c;
-   color: #000;
-   box-sizing: content-box;
+   background-color: #ffffff00;
+   color: #fff;
+   padding: 20px;
    text-align: center;
-   box-shadow:
-   0 0 10px rgba(156, 156, 156, 0.523),
-   inset 0 0 5px rgba(164, 163, 163, 0.555);
-   width: 100%;
+   font-size: 2.5em;
    border:  none;
    outline: none;
-   border-radius: 10px;
-   transition: background 0.5s ease-in-out, background-color 0.4s ease-in-out;
-   text-decoration: underline;
    text-decoration-thickness: 1px;
-   text-decoration-color: rgba(3, 3, 3, 0.4);
-   font-size: 20px;
-   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
 }
 .whatsapp{
    display: flex;
-   margin: 50px auto;
+   margin:0 auto;
    color: #fff;
    font-family: sans-serif;
    align-items: center;
@@ -72,46 +53,6 @@ header p{
    display: flex;
    flex-direction: column;
    align-items: center;
-}
-.whatsapp-btn{
-   background-color: #25D366;
-   margin: 0;
-   color: white;
-   border: none;
-   padding: 10px 15px;
-   border-radius: 50px;
-   font-size:20px;
-   cursor: pointer;
-   text-decoration: none;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.whatsapp-btn:hover{
-   background-color: #128c55;
-   transition: background-color 0.3s ease;
-}
-.whatsapp-btn a{
-   color: #000;
-   text-decoration: none;
-}
-.switch-btn{
-   border: none;
-   padding: 15px;
-   background: linear-gradient(135deg, #00ff95, #00bfff);
-   color: #000;
-   border-radius: 5px;
-   cursor: pointer;
-}
-.dev-mode a{
-   color: #000;
-   text-decoration: none;
-   font-weight: bold;
-   font-family: 'Courier New', Courier, monospace;
-}
-.switch-btn:hover{
-   background: linear-gradient(135deg, #00bfff, #00ff95);
-   transition: 0.3s ease-in-out;
 }
 footer a{
    color: #fff;
@@ -131,10 +72,5 @@ footer a{
    .input-div {
       width: 90%;
       font-size: 16px;
-   }
-   .whatsapp{
-      color: #fff;
-      font-size:14px ;
-      font-family: 'Courier New', Courier, monospace;
    }
 }
