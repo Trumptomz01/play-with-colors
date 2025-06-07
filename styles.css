@@ -101,7 +101,6 @@ footer a{
    min-width: 300px;
    position: fixed;
    right: 10px;
-   /* animation: slideOutBottomRight 0.7s forwards; */
    bottom: 57px;
    padding: 1.3rem;
    margin: 1rem;
@@ -112,7 +111,7 @@ footer a{
       opacity: 0;
    }
    80% {
-      /* transform: translate(0, 0) scale(0.89); */
+      transform: translate(0, 0) scale(0.98);
       opacity: 1;
    }
    100% {

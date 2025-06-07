@@ -29,10 +29,10 @@ function getType(val){
 const form = document.querySelector('#form');
 const feedbackBtn = document.querySelector('#feedback-btn');
 function showForm(){
-   form.style= ' display:flex;    animation: slideInBottomRight 0.5s forwards; ';
+   form.style= ' display:flex;    animation: slideInBottomRight 0.4s forwards; ';
 }
 function hideForm(){
-   form.style = ' display:flex; animation: slideOutBottomRight 0.5s forwards'
+   form.style = ' display:flex; animation: slideOutBottomRight 0.3s forwards'
 }
 
 feedbackBtn.addEventListener('click', ()=>{
