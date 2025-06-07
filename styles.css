@@ -140,7 +140,7 @@ footer a{
 label{
    margin-top: 15px;
    font-weight:400;
-
+   color: #ccc;
 }
 .input{
    margin-top: 5px;
@@ -192,4 +192,11 @@ textarea{
 
    }
 }
-   
+.cancel-btn{
+   position: fixed;
+   top: 10px;
+   right: 15px;
+   font-size: 1.3rem;
+   color: #ccc;
+   cursor: pointer;
+}

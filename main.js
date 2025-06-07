@@ -28,6 +28,7 @@ function getType(val){
 
 const form = document.querySelector('#form');
 const feedbackBtn = document.querySelector('#feedback-btn');
+const cancelBtn = document.querySelector('#cancel');
 function showForm(){
    form.style= ' display:flex;    animation: slideInBottomRight 0.4s forwards; ';
 }
@@ -42,4 +43,7 @@ feedbackBtn.addEventListener('click', ()=>{
          hideForm();
       }
    });
+});
+cancelBtn.addEventListener('click', ()=>{
+   hideForm();
 });
