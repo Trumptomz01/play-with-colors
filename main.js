@@ -25,3 +25,21 @@ function getType(val){
       return "Color Name"
    }
 }
+
+const form = document.querySelector('#form');
+const feedbackBtn = document.querySelector('#feedback-btn');
+function showForm(){
+   form.style= ' display:flex;    animation: slideInBottomRight 0.5s forwards; ';
+}
+function hideForm(){
+   form.style = ' display:flex; animation: slideOutBottomRight 0.5s forwards'
+}
+
+feedbackBtn.addEventListener('click', ()=>{
+   showForm();
+   document.addEventListener('click', (event) => {
+      if (!form.contains(event.target) && !feedbackBtn.contains(event.target)) {
+         hideForm();
+      }
+   });
+});
